@@ -1,0 +1,9 @@
+# Ignorar TODO
+*
+
+# Excepto la carpeta VeciCocina
+!VeciCocina/
+!VeciCocina/**
+
+# Permitir el .gitignore
+!.gitignore
