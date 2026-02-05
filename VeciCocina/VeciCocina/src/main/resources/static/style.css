@@ -1,0 +1,141 @@
+/*{
+    border: solid;
+}*/
+
+:root {
+  --bg: #0f172a;
+  --panel: #ffffff;
+  --panel-2: #ffffff;
+  --text: #2b364d;
+  --muted: #010c1f;
+  --primary: #0e612c;
+  --danger: #801010;
+  --warning: #e79404;
+  --info:#7a7a94;
+  --edit:#288afa;
+  --ring: rgba(79, 3, 82, 0.35);
+  --radius: 14px;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+
+div.contenedor1{
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    margin: 0;
+    outline: none;
+}
+
+div.leftform{
+    text-align: center;
+    margin: auto;
+    font-family: fantasy;
+    font-size: 120% ;
+}
+
+div.rightform{
+    margin: auto;
+    font-size: 200%;
+}
+
+div.registrolateralizq{
+    width: 50%;
+    display: inline-block;
+
+}
+
+div.registrolateralder{
+    width: 49%;
+    display: inline-block;
+
+}
+
+div.registrocentrada{
+    height: 60%;
+    width: 40%;
+    margin: auto; 
+    display: grid;
+    background-image: url(la_cocina_saludable.jpg);
+
+}
+
+a{
+    text-align: center;
+    vertical-align: text-bottom;
+}
+p{
+    font-size: small;
+}
+
+.email{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.full-width {
+  margin-top: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud de productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(230, 245, 240); display: grid;">
+    <div class="registrocentrada">
+        <div class="container" style="place-items: start center;">
+            <div class="header" >
+                <h1 > Productos de mi tienda</h1>
+                <div class="row">
+                    <input id="search" type="search" placeholder="Buscar por producto o por descripcion">
+                </div>
+            </div>
+                    <!--Formulario para rellenar-->
+                <form id="productForm" class="card" autocomplete="off">
+                    <div class="grid">
+                        <div class="field producto" >
+                            <label for="producto">Producto</label>
+                            <input id="producto" name="producto" type="text" placeholder="Ej. computador"required>
+                        </div>
+
+                        <div class="field precio">
+                            <label for="precio">Precio</label>
+                            <input id="precio" name="precio" type="number" min="0" step="0.01" placeholder="25000"required>
+                        </div> 
+
+                        <div class="field descripcion">
+                            <label for="descripcion">Descripcion</label>
+                            <textarea id="descripcion" name="descripcion" type="text" placeholder="Ej. caracteristicas del producto" required></textarea>
+                        </div> 
+                    </div>
+                        <!--Creacion de los botones-->
+                    <input type="hidden" id="editId">
+                    <div class="row" style="margin-top: 12px; text-align: center;">
+                        <button type="submit" id="guardarbtn">Guardar</button>
+                        <!--<button class="btn btn-secondary" type="button" id="cancelarbtn">Cancelar Edicion</button>-->
+                    </div>
+                </form>
+            <div class="card">
+                <div class="toolbar" style="text-align: center;">
+                    <span class="badge" id="countBadge">0 productos</span>
+                    <!--<button class="btn btn-outline" id="exportBtn" title="Exportar JSON">Exportar</button>-->
+                    <!--<button class="btn btn-outline" id="importBtn" title="Importar JSON">Importar</button>-->
+                    <!--<button class="btn btn-outline" id="clearBtn" title="Eliminar Todo">Vaciar</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

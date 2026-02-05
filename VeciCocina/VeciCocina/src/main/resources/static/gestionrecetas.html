@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(230, 245, 240); display: grid;">
+    <div class="registrocentrada">
+        <div class="container" style="place-items: start center;">
+            <div class="header" >
+                <h1 > Recetario</h1>
+                <div class="row">
+                    <input id="search" type="search" placeholder="Buscar por nombre o por codigo">
+                </div>
+            </div>
+                    <!--Formulario para rellenar-->
+                <form id="recetaForm" class="card" autocomplete="off">
+                    <div class="grid">
+                        <div class="field receta" >
+                            <label for="receta">Nombre de receta </label>
+                            <input id="Receta" name="Receta" type="text" placeholder="Ej. Sancocho"required>
+                        </div>
+
+                        <div class="field ingrediente">
+                            <label for="ingrediente">Ingredientes</label>
+                            <input id="ingrediente" name="ingrediente" type="text" placeholder="Ej. papa"required>
+                        </div> 
+
+                        <div class="field pasos">
+                            <label for="pasos">Pasos de la receta</label>
+                            <textarea id="pasos" name="pasos" type="text" placeholder="Ej. Colocar a cocinar las presas de gallina" required></textarea>
+                        </div> 
+                    </div>
+                        <!--Creacion de los botones-->
+                    <input type="hidden" id="editId">
+                    <div class="row" style="margin-top: 12px; text-align: center;">
+                        <button type="submit" id="guardarbtn">Guardar</button>
+                        <!--<button class="btn btn-secondary" type="button" id="cancelarbtn">Cancelar Edicion</button>-->
+                    </div>
+                </form>
+            <div class="card">
+                <div class="toolbar" style="text-align: center;">
+                    <span class="badge" id="countBadge">0 productos</span>
+                    <!--<button class="btn btn-outline" id="exportBtn" title="Exportar JSON">Exportar</button>-->
+                    <!--<button class="btn btn-outline" id="importBtn" title="Importar JSON">Importar</button>-->
+                    <!--<button class="btn btn-outline" id="clearBtn" title="Eliminar Todo">Vaciar</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
